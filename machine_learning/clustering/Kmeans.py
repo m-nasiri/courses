@@ -1,6 +1,6 @@
 #*****************************************************************************/
 # @file    Kmeans.py
-# @author  Majid Nasiri 95340651
+# @author  Majid Nasiri
 # @version V1.0.0
 # @date    10 May 2017
 # @brief   

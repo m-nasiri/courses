@@ -13,7 +13,11 @@ from __future__ import print_function
 import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
+import os
 
+
+if (not os.path.exists('./results')):
+    os.makedirs('./results')
 
 def evaluate_function(xi):
     X = np.power(xi, 4) - 16 * np.power(xi, 2) + 5 * xi
@@ -141,7 +145,7 @@ class evolutionary_computing():
         for i,cor in enumerate(self.generation):
             ax.scatter(cor[0], cor[1], self.gen_evaluation[i], c='r')
         
-        fig.savefig('../results/'+self.xover_type+'_#_'+self.mutation_type+'_#_'+str(num)+'.png', dpi=fig.dpi)
+        fig.savefig('./results/'+self.xover_type+'_#_'+self.mutation_type+'_#_'+str(num)+'.png', dpi=fig.dpi)
 
     def run(self, display='off'):
         """
@@ -368,7 +372,7 @@ for xover_type in xover_list:
         print('    best chromosome :', stylinski_model.best_chromosome)
         print('      best fittness : ', stylinski_model.best_fittness)
         print('--------------------:-------------------')
-        fig.savefig('../results/'+stylinski_model.xover_type+'_#_'+stylinski_model.mutation_type+'_#_result.png', dpi=fig.dpi)
+        fig.savefig('./results/'+stylinski_model.xover_type+'_#_'+stylinski_model.mutation_type+'_#_result.png', dpi=fig.dpi)
 
 
  
@@ -381,8 +385,5 @@ for xover_type in xover_list:
     #MUTATE the resulting offspring 
     #EVALUATE new candidates
     #SELECT individuals for the next generation
-    
-    
- 
     
 

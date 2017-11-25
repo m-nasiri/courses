@@ -1,2 +1,2 @@
 # courses
-this folder contain my files related to each course i have passed.
+this repository contains my codes in python and files related to each courses i have passed.

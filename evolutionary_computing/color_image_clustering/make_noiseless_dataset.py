@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import os
 
-n_shapes_list =  [2,3,4]
+n_shapes_list =  [1,2,3,4]
 for n_shapes in n_shapes_list:
     
     dataset_dir = "./dataset_noiseless/"+str(n_shapes+1)+"/"

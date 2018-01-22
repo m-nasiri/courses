@@ -4,8 +4,8 @@
 #base code:
 #date: 2018-Jan-19
 """
-this code is for visualizing first layer filters and activation layers of 
-convolutional neural network.
+this code is for clustering images contain diffrent type of shapes and diffrenet 
+colors.
 """
 ###############################################################################
 
@@ -20,8 +20,8 @@ import matplotlib.pyplot as plt
 import tuning
 
 
-#dataset = 'dataset_noiseless'
-dataset = 'dataset_noisy_0.025'
+dataset = 'dataset_noiseless'
+#dataset = 'dataset_noisy_0.025'
 #dataset = 'dataset_noisy_0.1'
 
 #n_centers_tune_list = [[2,3,4,5]]
